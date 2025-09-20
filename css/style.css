@@ -1,0 +1,68 @@
+/* ...existing code... */
+
+body {
+    justify-items: center;
+    min-height: 100vh;
+    align-content: center;
+    background-color: #028b0b/* ...existing code... */
+}
+/* ...existing code... */
+
+input[type="text"],
+input[type="date"] {
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #3b82f6;
+}
+
+button.bg-blue-500 {
+    background-color: #3b82f6;
+    color: #fff;
+}
+
+/* ...existing code... */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #e5e7eb; /* Gray table background */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+th, td {
+    border: 1px solid #3b82f6; /* Blue border */
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #3b82f6; /* Blue header */
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f5f9; /* Lighter gray for even rows */
+}
+
+button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bg-red-500 {
+    background-color: #ef4444;
+}
+
+.bg-blue-500 {
+    background-color: #3b82f6;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.rounded {
+    border-radius: 4px;
+}
