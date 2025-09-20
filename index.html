@@ -8,11 +8,60 @@
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css\style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
+    <header>
+        <h1 class="text-3xl font-bold">Todo List</h1>
+    </header>
+    <main>
+        <form>
+            <input type="text" id="todo-input" placeholder="Add your new todo" class="border border-blue-300 p-2 mb-2 w-full">
+            <input type="date" id="todo-date" placeholder="Add your new todo" class="border border-blue-300 p-2 mb-2 w-full">
+            <button type="button" onclick="addTodo()" class="bg-blue-500 text-white rounded p-2 mt-2 w-full">Add Todo</button>
+        </form>
+        
+        <!-- ...existing code... -->
+<section class="mt-6">
+    <div class="mb-4">
+        <input type="text" id="filter-input" placeholder="Filter todos..." class="border border-blue-300 p-2 w-3/4">
+        <button type="button" onclick="filterTodo()" class="bg-blue-500 text-white rounded p-2">Filter</button>
+    </div>
+    <table class="mt-4 w-full border border-blue-300" id="todo-table">
+        <thead>
+            <tr>
+                <th class="border p-2">Task</th>
+                <th class="border p-2">Date</th>
+                <th class="border p-2">Action</th>
+            </tr>
+        </thead>
+        <tbody id="todo-list">
+        <!-- JS will render todos here -->
+        </tbody>
+    </table>
+</section>
+<!-- ...existing code... -->
+<script>
+    // Call displayTodos on page load
+    window.onload = function() {
+        displayTodos();
+    };
+</script>
+<!-- ...existing code... -->
+        
+    </main>
 
 
+
+
+
+
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
     <!-- JS External -->
     <script src="js\script.js"></script>
 </body>
